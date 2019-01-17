@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Испытание: редактирование профиля</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Профиль</h1>
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="gender">Ваш пол: <input type="radio" name="gender" id="gender" value="man"> Мужской 
+      <input type="radio" name="gender" id="gender" value="woman" checked> Женский</label><br>
+      <label for="date_born_1" for="date_born_year">Месяц и год рождения:<br>
+      <select id="date_born_1">
+        <option value="january">Январь</option>
+        </select>
+        <select id="date_born_year">
+        <option value="1990">1990</option>
+        </select>
+      </label><br>
+      <label for="tehnology">Знакомые технологии:<br>
+      <select multiple>
+        <option value="html">HTML</option>
+        <option value="css" selected>CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="node.js">Node.js</option>
+        </select>
+      </label><br>
+      <label for="photo">Фото: <input type="file" id="photo" name="photo"></label><br>
+      <input type="submit" value="Сохранить">
+    </form>
